@@ -7,5 +7,8 @@
 
 import Foundation
 
-print("Hello, World!")
+var text = "A+dog*in the-park"
 
+let arrengedText = text.replacingOccurrences(of: "[+*\\-]", with: " ", options: .regularExpression)
+
+print(arrengedText)
